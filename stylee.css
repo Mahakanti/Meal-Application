@@ -1,0 +1,179 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:rgb(204, 150, 150);
+    margin: 0;
+    padding: 0;
+  }
+  .top-bar{
+    padding: 5px;
+    background-color: #3d5268;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(73, 161, 37);
+    align-items: center;
+    text-align: center;
+  }
+  #searchResults{
+    text-align: center;
+    align-items: center;
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+    
+  }
+  #favoritesContainer{
+    text-align: center;
+    align-items: center;
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+    
+  }
+  .viewFavoritesButton{
+    height: 24px;
+    width: 24px;
+    border-radius: 5px;
+
+  }
+  
+  .container {
+   
+   text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #e1ebe6;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  #searchInput {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  .meal-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    
+  }
+  
+  /* Style for the meal name */
+.meal-card h3 {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+  #mealImage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  /* Style for the meal image */
+.meal-card img {
+  width: 100%;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Style for the "View Details" link */
+.meal-card a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 5px;
+ margin: 5px;
+}
+.meal-card a:hover{
+  color: #e5e919;
+  transform: scaleX(1.2);
+}
+/* Style for the "Add to Favorite" button */
+.meal-card button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Hover effect for the "Add to Favorite" button */
+.meal-card .remove:hover {
+  background-color: #c0392b;
+}
+
+/* Hover effect for the "Add to Favorite" button when it's already added */
+.meal-card .add:hover {
+  background-color: #218838;
+}
+
+  #mealInstructions {
+    white-space: pre-wrap;
+  }
+  
+  #viewFavoritesButton{
+    background-color: #9607b3;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #viewFavoritesButton:hover {
+    background-color: #d3a4d3;
+    color: #b44c10;
+  }
+  
+  .meal-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .favorite-meals-list {
+    margin-top: 20px;
+  }
+  
+  .favorite-meal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+ 
+  
+  .meal-card.remove:hover {
+    background-color: #c0392b;
+  }
+  /* when screen width is less than 500px meal card  width will be 80% of screen*/
+  @media only screen and (max-width: 500px)  {
+    .meal-card{
+      width: 80%;
+    }
+    
+  } 
+    
+  
+  
